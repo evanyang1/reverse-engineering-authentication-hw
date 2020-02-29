@@ -1,0 +1,39 @@
+1. server.js
+
+Starts the server and the Passport authentication components.
+
+2. package.json
+
+Contains information about scripts and npm packages.
+
+3. config > middleware > isAuthenticated.js 
+
+If one logs in, then the user is redirected to account-specific content.
+If not, then the user is redirected to the login page.
+
+4. config > passport.js
+
+Authenticates the user.
+
+5. models > index.js
+
+6. routes > api-routes.js 
+
+A function (exported): API for users 
+
+7. routes > html-routes.js
+
+Routes for serving up the different HTML packages
+
+8. public > js > login.js
+
+Performs login related activities. Checks that the username and password fields aren't empty.
+Uses a POST request.
+
+9. public > js > members.js 
+
+does a GET request to figure out which user is logged in and updates the HTML on the page
+
+10. public > js > signup.js
+
+Uses a POST request to add a new user to the API. Similar form actions to thost of login.js.
